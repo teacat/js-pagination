@@ -1,6 +1,7 @@
 {
   "name": "@teacat-pkg/js-pagination",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "type": "module",
   "description": "Pagination helper class.",
   "main": "js-pagination.js",
   "scripts": {
