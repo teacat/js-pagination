@@ -31,8 +31,8 @@ export class Pagination extends EventTarget {
             return this
         }
         this.current_page++;
-        this.dispatchEvent(new Event('next'));
         this.dispatchEvent(new Event('change'));
+        this.dispatchEvent(new Event('next'));
         return this
     }
 
@@ -42,8 +42,8 @@ export class Pagination extends EventTarget {
            return this
         }
         this.current_page--;
-        this.dispatchEvent(new Event('previous'));
         this.dispatchEvent(new Event('change'));
+        this.dispatchEvent(new Event('previous'));
         return this
     }
 
@@ -53,8 +53,8 @@ export class Pagination extends EventTarget {
            return this
         }
         this.current_page = page;
-        this.dispatchEvent(new Event('goto'));
         this.dispatchEvent(new Event('change'));
+        this.dispatchEvent(new Event('goto'));
         return this
     }
 
