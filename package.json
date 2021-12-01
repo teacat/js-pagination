@@ -1,0 +1,19 @@
+{
+  "name": "@teacat-pkg/js-pagination",
+  "version": "1.0.0",
+  "description": "Pagination helper class.",
+  "main": "js-pagination.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teacat/js-pagination.git"
+  },
+  "author": "TeaCat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teacat/js-pagination/issues"
+  },
+  "homepage": "https://github.com/teacat/js-pagination#readme"
+}

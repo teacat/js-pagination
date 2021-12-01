@@ -1,5 +1,7 @@
 # JS Pagination
 
+`npm install @teacat-pkg/js-pagination`
+
 ## Usage
 
 ```js
