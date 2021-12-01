@@ -2,7 +2,7 @@ export class Pagination extends EventTarget {
     constructor(options) {
         super();
         this.count_per_page = options?.count_per_page !== undefined ? options?.count_per_page : 0;
-        this.reset_on_update = options?.reset_on_update !== undefined ? options?.reset_on_update : false;
+        //this.reset_on_update = options?.reset_on_update !== undefined ? options?.reset_on_update : false;
         this.total = 0;
         this.current_page = 1;
         this.total_pages = 0;
