@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script type="module">
+            import { Pagination } from "./js-pagination.js";
+
+            var pagination = new Pagination({
+                count_per_page: 10,
+            });
+            pagination.addEventListener("change", () => {
+                console.log(`changed: total[${pagination.total_pages}], current[${pagination.current_page}]`);
+            });
+            pagination.update(30);
+            pagination.next(); // 2
+            pagination.next(); // 3
+            pagination.next(); // 3 (no-op)
+            pagination.previous(); // 2
+            pagination.previous(); // 1
+            pagination.previous(); // 1 (no-op)
+            pagination.goto(3); // 3
+            pagination.goto(4); // 3 (no-op)
+        </script>
+    </body>
+</html>
