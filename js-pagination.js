@@ -49,7 +49,7 @@ export class Pagination extends EventTarget {
 
     // goto
     goto(page) {
-        if (page > this.total_pages || page < this.total_pages) {
+        if (page <= 0 || page > this.total_pages) {
            return this
         }
         this.current_page = page;
